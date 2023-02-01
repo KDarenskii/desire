@@ -1,0 +1,30 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.call-to-action {
+    background: url("../../../public/img/call-to-action-background.png") center no-repeat;
+    background-size: cover;
+    padding: 172px 0 156px;
+    @media (max-width: $tablet){
+        padding: 120px 0 100px;
+    }
+    @media (max-width: $mobileMiddle){
+        padding: 80px 0;
+    }
+    @media (max-width: $mobileSmall){
+        padding: 40px 0;
+    }
+    // .call-to-action__content
+    &__content {
+
+    }
+    // .call-to-action__title
+    &__title {
+        padding-bottom: 22px;
+        margin-bottom: 21px;
+        max-width: 731px;
+    }
+    // .call-to-action__subtitle
+    &__subtitle {
+        max-width: 540px;
+    }
+}

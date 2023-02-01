@@ -1,0 +1,7 @@
+@import "../../../assets/styles/helpers/vars.scss";
+
+.sidebar-button {
+    @media (max-width: $mobile){
+        display: none;
+    }
+}

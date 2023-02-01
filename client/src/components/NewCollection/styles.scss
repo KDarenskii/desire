@@ -1,0 +1,25 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.new-collection {
+    padding: 133px 0 104px;
+    @media (max-width: $pc) {
+        padding: 90px 0;
+    }
+    @media (max-width: $tablet) {
+        padding: 60px 0;
+    }
+    // .new-collection__header
+    &__header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    // .new-collection__header-underline
+    &__header-underline {
+        width: 46.49%;
+    }
+    // .new-collection__title
+    &__title {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+}

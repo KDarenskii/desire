@@ -1,0 +1,164 @@
+@import "../../../assets/styles/helpers/vars.scss";
+
+.process-item {
+    padding-bottom: 20px;
+    &--measurements,
+    &--production,
+    &--delivery {
+        &::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 20px;
+            background-color: $black;
+            position: absolute;
+            left: 0;
+            @media (max-width: $mobile) {
+                width: 20px;
+                height: 2px;
+            }
+            @media (max-width: $mobileSmall) {
+                display: none;
+            }
+        }
+        @media (max-width: $pc) {
+            margin-left: -140px;
+        }
+    }
+    &--measurements,
+    &--production,
+    &--delivery,
+    &--consultation {
+        @media (max-width: $mobileSmall) {
+            padding: 0;
+        }
+    }
+    &--consultation {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        max-width: 306px;
+        position: relative;
+        @media (max-width: $mobile) {
+            max-width: 100%;
+            padding-right: 15px;
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+        &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: $black;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            @media (max-width: $mobile) {
+                top: 0;
+                left: auto;
+                right: -6px;
+            }
+            @media (max-width: $mobileSmall) {
+                display: none;
+            }
+        }
+    }
+    &--measurements {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        max-width: 250px;
+        padding-top: 38px;
+        position: relative;
+        &::after {
+            top: 0;
+        }
+        @media (max-width: $tablet) {
+            margin-left: -180px;
+        }
+        @media (max-width: $mobile) {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            max-width: 100%;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 0;
+        }
+    }
+    &--production {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        max-width: 256px;
+        position: relative;
+        &::after {
+            bottom: 0;
+        }
+        @media (max-width: $tablet) {
+            margin-left: -240px;
+        }
+        @media (max-width: $mobile) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            max-width: 100%;
+            padding-right: 15px;
+            padding-top: 38px;
+            margin-bottom: 30px;
+            &::after {
+                top: 0;
+                left: auto;
+                right: 0;
+            }
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 0;
+        }
+    }
+    &--delivery {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        position: relative;
+        padding-top: 38px;
+        max-width: 260px;
+        &::after {
+            top: 0;
+        }
+        @media (max-width: $tablet) {
+            margin-left: -380px;
+        }
+        @media (max-width: $mobile) {
+            grid-column: 2/3;
+            grid-row: 4/5;
+            max-width: 100%;
+            padding-left: 15px;
+        }
+        @media (max-width: $mobileSmall) {
+            padding: 0;
+        }
+    }
+    &--delivery,
+    &--production,
+    &--measurements {
+        @media (max-width: $mobile) {
+            margin-left: 0;
+        }
+    }
+    // .process-item__header
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+    // .process-item__title
+    &__title {
+        color: $black;
+        font-family: $Mont;
+        font-size: 16px;
+        line-height: 1.44;
+        font-weight: 700;
+    }
+}

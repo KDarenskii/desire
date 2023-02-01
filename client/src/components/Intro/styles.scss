@@ -1,0 +1,160 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.intro {
+    background: url("../../../public/img/intro/intro-background.jpg") top center no-repeat;
+    @media (max-width: 1420px) {
+        background-size: 1470px;
+    }
+    @media (max-width: $pc) {
+        background-size: 1270px;
+    }
+    @media (max-width: $tablet) {
+        background-size: cover;
+    }
+    // .intro__swiper-wrapper
+    &__swiper-wrapper {
+        padding-bottom: 10px;
+        @media (max-width: 1420px) {
+            padding-bottom: 30px;
+        }
+        @media (max-width: $tablet) {
+            padding-bottom: 0;
+        }
+        @media (max-width: $mobileMiddle) {
+            padding-bottom: 40px;
+        }
+    }
+    // .intro__slider
+    &__swiper {
+        @media (max-width: $mobileMiddle) {
+            padding-bottom: 40px;
+        }
+    }
+    // .intro__slide
+    &__slide {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media (max-width: $mobileMiddle) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    // .intro__slide-img
+    &__slide-img {
+        margin-left: -220px;
+        // max-width: 703px;
+        max-width: 100%;
+        height: auto;
+        @media (max-width: 1620px) {
+            margin-left: 0;
+        }
+        @media (max-width: 1420px) {
+            max-width: 520px;
+            margin-left: 50px;
+        }
+        @media (max-width: $pc) {
+            max-width: 460px;
+        }
+        @media (max-width: $tablet) {
+            max-width: 330px;
+        }
+        @media (max-width: $mobile) {
+            max-width: 230px;
+        }
+        @media (max-width: $mobileMiddle) {
+            margin-left: 0;
+        }
+    }
+    // .intro__slide-content
+    &__slide-content {
+        padding-top: 174px;
+        @media (max-width: 1420px) {
+            padding-top: 120px;
+        }
+        @media (max-width: $tablet) {
+            padding-top: 80px;
+        }
+        @media (max-width: $mobile) {
+            padding-top: 50px;
+        }
+        @media (max-width: $mobileMiddle) {
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+    // .intro__slide-title
+    .intro__slide-title {
+        font-size: 110px;
+        line-height: 1.24;
+        font-family: $Mont;
+        font-weight: 700;
+        color: $black;
+        max-width: 635px;
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+        position: relative;
+        @media (max-width: 1420px) {
+            font-size: 92px;
+        }
+        @media (max-width: $pc) {
+            font-size: 55px;
+            max-width: 100%;
+            padding-right: 20px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 45px;
+        }
+        @media (max-width: $mobile) {
+            font-size: 35px;
+            padding-bottom: 13px;
+            margin-bottom: 13px;
+        }
+        @media (max-width: $mobileMiddle) {
+            padding-left: 20px;
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        @media (max-width: $mobileSmall) {
+            font-size: 27px;
+        }
+    }
+    // .intro__title-underline
+    .intro.intro__title-underline {
+        width: 185px;
+        @media (max-width: $mobileMiddle) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    // .intro__slide-text
+    &__slide-text {
+        max-width: 586px;
+        @media (max-width: $pc) {
+            padding-right: 20px;
+        }
+        @media (max-width: $tablet) {
+            font-size: 14px;
+        }
+        @media (max-width: $mobileMiddle) {
+            max-width: 450px;
+            padding-left: 20px;
+        }
+    }
+    // .intro__pagination-bullet
+    &__pagination-bullet {
+        background-color: $black;
+        opacity: 1;
+        &.swiper-pagination-bullet {
+            &:not(:last-child) {
+                margin-right: 29.5px;
+            }
+        }
+        &--active {
+            background-color: $yellow;
+        }
+    }
+}

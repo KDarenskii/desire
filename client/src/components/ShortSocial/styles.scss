@@ -1,0 +1,9 @@
+.short-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    // .short-social__item
+    &__item {
+        cursor: pointer;
+    }
+}

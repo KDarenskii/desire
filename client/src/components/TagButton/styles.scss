@@ -1,0 +1,17 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.tag-button {
+    border: 1px solid rgba(#455667, 0.5);
+    border-radius: 14px;
+    color: #8F8D8D;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    height: 28px;
+    background-color: $white;
+    padding: 0 19px;
+    transition: background-color 0.2s ease;
+    &:hover {
+        background-color: rgba($grey, 0.1);
+    }
+}

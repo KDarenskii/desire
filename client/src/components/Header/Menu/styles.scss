@@ -1,0 +1,48 @@
+@import '../../../assets/styles/helpers/vars.scss';
+
+.menu {
+    @media (max-width: $mobileSmall){
+        width: 90%;
+        margin: 0 auto;
+        background-color: $white;
+        text-align: center;
+        padding-bottom: 1px;
+        box-shadow: inset 0px 0px 0px rgb(22 23 72 / 7%), 0px 25px 35px rgb(22 23 72 / 5%);
+        transform: translateY(-1000px);
+        transition: transform 0.3s ease-in;
+        position: relative;
+        z-index: 10;
+        &--radius{
+            border-radius: 0 0 20px 20px;
+            &.menu--active{
+                transform: translateY(15px);
+            }
+        }
+        &--active{
+            transform: translateY(18px);
+        }
+    }
+    // .menu__list
+    &__list {
+        display: flex;
+        gap: 81px;
+        @media (max-width: $tablet){
+            gap: 70px;
+        }
+        @media (max-width: $mobile){
+            gap: 40px;
+        }
+        @media (max-width: $mobileMiddle){
+            gap: 30px;
+        }
+        @media (max-width: $mobileSmall){
+            display: block;
+        }
+    }
+    // .menu__item
+    &__item {
+        @media (max-width: $mobileSmall){
+            // padding: 15px 0;
+        }
+    }
+}

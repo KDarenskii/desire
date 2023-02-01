@@ -1,0 +1,26 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.ideas {
+    padding: 88px 0 46px;
+    @media (max-width: $mobile){
+        padding: 50px 0 40px;
+    }
+    // .ideas__header
+    &__header {
+        max-width: 430px;
+        margin: 0 auto 30px;
+        @media (max-width: $mobile) {
+            font-size: 30px;
+        }
+    }
+    // .ideas__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        column-gap: 30px;
+        @media (max-width: $mobileMiddle){
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.sidebar {
+    padding: 124px 47px 60px;
+    box-shadow: -4px 1px 20px 0px black;
+    background-color: $white;
+    text-align: center;
+    max-width: 694px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    z-index: 100;
+    transition: right 0.3s ease-in-out;
+    overflow: auto;
+    &--active{
+        right: 0;
+    }
+    // .sidebar__btn
+    &__close {
+        display: block;
+        position: absolute;
+        top: 41px;
+        left: 47px;
+        margin-bottom: 57px;
+    }
+    // .sidebar__header
+    &__header {
+        max-width: 483px;
+        margin: 0 auto 75px;
+        @media (max-width: $mobileMiddle){
+            margin-bottom: 35px;
+        }
+    }
+    // .sidebar__logo
+    &__logo {
+        width: 194px;
+        height: 58px;
+        margin-bottom: 47px;
+        @media (max-width: $mobileMiddle){
+            margin-bottom: 25px;
+        }
+    }
+    // .sidebar__title
+    &__title {
+        color: $black;
+        font-family: $Mont;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.42;
+        margin-bottom: 17px;
+        @media (max-width: $mobileMiddle){
+            font-size: 31px;
+        }
+    }
+    // .sidebar__photo
+    &__photo {
+        max-width: 483px;
+        width: 100%;
+    }
+}

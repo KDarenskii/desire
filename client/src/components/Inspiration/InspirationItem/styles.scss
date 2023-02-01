@@ -1,0 +1,27 @@
+@import "../../../assets/styles/helpers/vars.scss";
+
+.inspiration-item {
+    &:not(:last-child){
+        margin-bottom: 33px;
+    }
+    border-bottom: 2px solid $white;
+    // .inspiration-item__header
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 14px;
+        font-weight: 700;
+        font-family: $Mont;
+        color: $black;
+        line-height: 1.44;
+    }
+    // .inspiration-item__line
+    &__line {
+        height: 2px;
+        background-color: $black;
+        border-radius: 4px;
+        margin-bottom: -2px;
+    }
+}

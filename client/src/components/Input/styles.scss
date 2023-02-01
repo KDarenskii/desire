@@ -1,0 +1,18 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.input {
+    border: 1px solid #DFDFDF;
+    border-radius: 20px;
+    transition: border-color 0.2s ease;
+    padding: 6px 17px;
+    font-size: 16px;
+    height: 40px;
+    &:focus {
+        border-color: $black;
+    }
+    &::placeholder {
+        color: #A1A1A1;
+        line-height: 1.75;
+        font-size: 16px;
+    }
+}

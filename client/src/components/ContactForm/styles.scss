@@ -1,0 +1,27 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.contact-form {
+    // .contact-form__wrapper
+    &__wrapper {
+        display: flex;
+        gap: 13px;
+        margin-bottom: 13px;
+        @media (max-width: $mobileMiddle) {
+            flex-wrap: wrap;
+        }
+    }
+    // .contact-form__input
+    &__input {
+        width: 100%;
+    }
+    // .contact-form__textarea
+    &__textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        resize: none;
+    }
+    // .contact-form__button
+    &__button {
+        width: 181px;
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.collection-slider {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+    padding-bottom: 60px;
+    // .collection-slider__swiper
+    &__swiper {
+        padding-bottom: 70px;
+    }
+    // .collection-slider__pagination-bullet
+    &__pagination-bullet {
+        background-color: $black;
+        opacity: 1;
+        &.swiper-pagination-bullet {
+            &:not(:last-child) {
+                margin-right: 29.5px;
+            }
+        }
+        &--active {
+            background-color: $yellow;
+        }
+    }
+}

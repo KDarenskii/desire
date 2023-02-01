@@ -1,0 +1,50 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.post {
+    // .post__photo-box
+    &__photo-box {
+        margin-bottom: 20px;
+    }
+    // .post__img
+    &__img {
+        display: block;
+        height: auto;
+        // height: 308px;
+        width: 100%;
+        object-fit: cover;
+    }
+    // .post__info
+    &__info {
+        margin-bottom: 7px;
+    }
+    &__category, &__author, &__date, &__line {
+        font-size: 14px;
+        color: #707070;
+        font-weight: 600;
+        line-height: 2;
+        @media (max-width: $pc){
+            font-size: 13px;
+        }
+    }
+    &__category:hover, &__author:hover {
+        text-decoration: underline;
+    }
+    // .post__title
+    &__title {
+        color: $black;
+        font-size: 24px;
+        line-height: 1.58;
+        font-family: $Mont;
+        font-weight: 400;
+        @media (max-width: $pc){
+            font-size: 21px;
+        }
+        @media (max-width: $mobileSmall){
+            font-size: 17px;
+        }
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

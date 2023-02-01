@@ -1,0 +1,20 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.search {
+    border: 1px solid rgba($black, 0.5);
+    border-radius: 20px;
+    height: 40px;
+    padding: 6px 45px 5px 18px;
+    font-size: 14px;
+    background: url("../../assets/img/icons/search-icon.svg") no-repeat center right 19px;
+    position: relative;
+    transition: border-color 0.2s ease;
+    &:focus {
+        border-color: $black;
+    }
+    &::placeholder {
+        color: #A1A1A1;
+        font-size: 14px;
+        line-height: 2;
+    }
+}

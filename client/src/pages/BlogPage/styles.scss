@@ -1,0 +1,30 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.blog-page {
+    padding: 60px 0;
+    @media (max-width: $tablet) {
+        padding: 30px 0;
+    }
+    // .blog-page__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 349px;
+        column-gap: 31px;
+        @media (max-width: $tablet) {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+    // .blog-page__search
+    &__search {
+        display: none;
+        @media (max-width: $tablet) {
+            display: block;
+            margin: 0 0 30px auto;
+            width: 40%;
+        }
+        @media (max-width: $mobileMiddle) {
+            width: 70%;
+        }
+    }
+}

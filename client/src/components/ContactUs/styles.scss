@@ -1,0 +1,47 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.contact-us {
+    padding: 55px 0 100px;
+    @media (max-width: $mobileMiddle) {
+        padding: 40px 0;
+    }
+    // .contact-us__title
+    &__title {
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+    }
+    // .contact-us__underline
+    &__underline {
+        width: 100%;
+        background-color: black;
+    }
+    // .contact-us__info
+    &__info {
+        padding-left: 281px;
+        @media (max-width: $tablet) {
+            padding-left: 0;
+        }
+    }
+    // .contact-us__text
+    &__text {
+        color: #a1a1a1;
+        line-height: 1.75;
+        margin: 21px 0 15px;
+    }
+    // .contact-us__location
+    &__location {
+        margin-bottom: 20px;
+    }
+    // .contact-us__item
+    &__item:not(:last-child) {
+        margin-bottom: 2px;
+    }
+    // .contact-us__item-link
+    &__item-link:hover {
+        text-decoration: underline;
+    }
+    // .contact-us__form 
+    &__form {
+        margin-top: 24px;
+    }
+}

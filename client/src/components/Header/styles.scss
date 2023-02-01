@@ -1,0 +1,50 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.header {
+    padding: 46px 0 43px;
+    @media (max-width: $tablet) {
+        padding: 30px 0;
+    }
+    @media (max-width: $mobileSmall){
+        padding: 21px 0;
+        height: 70px;
+        position: fixed;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        z-index: 900;
+        background-color: $white;
+    }
+    // .header__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 61px;
+        padding-left: 32px;
+        @media (max-width: $tablet){
+            padding-left: 0;
+        }
+        @media (max-width: $mobile){
+            gap: 40px;
+        }
+        @media (max-width: $mobileMiddle){
+            gap: 30px;
+            row-gap: 0;
+            flex-wrap: wrap;
+        }
+        @media (max-width: $mobileSmall){
+            height: 70px;
+        }
+    }
+    // .header__logo
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 11;
+        @media (max-width: $mobileSmall){
+            order: -1;
+            margin: 0;
+        }
+    }
+}

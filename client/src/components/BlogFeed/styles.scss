@@ -1,0 +1,28 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.blog-feed {
+    @media (max-width: $tablet) {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    // .blog-feed__post
+    &__post {
+        margin-bottom: 70px;
+        @media (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
+    // .blog-feed__quote
+    &__quote {
+        @media (max-width: $tablet) {
+            padding: 20px;
+        }
+    }
+    // .blog__pagination-arrow
+    &__pagination-arrow {
+        display: block;
+        &--left {
+            transform: rotate(180deg);
+        }
+    }
+}

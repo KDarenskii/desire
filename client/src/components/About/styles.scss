@@ -1,0 +1,63 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.about {
+    // .about__intro
+    &__intro {
+        padding: 160px 0;
+        text-align: center;
+        background: url("../../../public/img/about/about-background.jpg") center no-repeat;
+        background-size: cover;
+        @media (max-width: $mobile) {
+            padding: 60px 0;
+        }
+    }
+    // .about__intro-title
+    &__intro-title {
+        font-size: 60px;
+        color: $black;
+        font-weight: 600;
+        font-family: $Mont;
+        line-height: 1.33;
+        @media (max-width: $mobile) {
+            font-size: 46px;
+        }
+    }
+    // .about__content
+    &__content {
+        padding: 129px 0 90px;
+        @media (max-width: $pc) {
+            padding: 90px 0;
+        }
+        @media (max-width: $mobile) {
+            padding: 60px 0;
+        }
+    }
+    // .about__content-title
+    &__content-title {
+        max-width: 822px;
+        padding-bottom: 20px;
+        margin-bottom: 23px;
+        &::after {
+            width: 200px;
+        }
+        @media (max-width: $mobileSmall) {
+            font-size: 23px;
+        }
+    }
+    // .about__content-info
+    &__content-info {
+        padding-left: 285px;
+        @media (max-width: $pc) {
+            padding-left: 120px;
+        }
+        @media (max-width: $mobile) {
+            padding-left: 0;
+        }
+    }
+    // .about__content-text
+    &__content-text {
+        &:not(:last-child) {
+            margin-bottom: 35px;
+        }
+    }
+}

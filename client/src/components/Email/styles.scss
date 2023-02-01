@@ -1,0 +1,9 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.email {
+    font-size: 14px;
+    color: $black;
+    font-weight: 600;
+    padding-left: 25px;
+    background: url("../../assets/img/icons/mail.svg") no-repeat left center;
+}

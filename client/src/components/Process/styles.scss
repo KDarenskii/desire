@@ -1,0 +1,42 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.process {
+    padding: 80px 0 108px;
+    @media (max-width: $tablet){
+        padding: 70px 0;
+    }
+    // .process__header
+    &__header {
+        max-width: 430px;
+        margin: 0 auto 40px;
+    }
+    // .process__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 306px 280px 256px auto; 
+        grid-template-rows: auto auto;
+        position: relative;
+        @media (max-width: $mobile){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+        }
+        @media (max-width: $mobileSmall){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    // .process__line
+    &__line {
+        grid-column: 1/5;
+        grid-row: 2;
+        width: 100%;
+        height: 2px;
+        background-color: rgba($black, 0.7);
+        @media (max-width: $mobile){
+            grid-column: 2;
+            grid-row: 1/5;
+            height: 100%;
+            width: 2px;
+        }
+    }
+}

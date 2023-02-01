@@ -1,0 +1,18 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.tags {
+    // .tags__title
+    &__title {
+        color: $black;
+        line-height: 1.44;
+        font-family: $Mont;
+        font-weight: 400;
+        margin-bottom: 19px;
+    }
+    // .tags__wrapper
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

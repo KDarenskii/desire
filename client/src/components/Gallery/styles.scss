@@ -1,0 +1,24 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.gallery {
+    // .gallery__wrapper
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 30px;
+        @media (max-width: $pc){
+            grid-gap: 15px;
+        }
+        @media (max-width: $tablet){
+            grid-gap: 8px;
+        }
+        @media (max-width: $mobileMiddle){
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+        }
+        @media (max-width: $mobileSmall){
+            grid-template-columns: 1fr;
+        }
+    }
+}

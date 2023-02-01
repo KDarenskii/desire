@@ -1,0 +1,16 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.resent {
+    // .resent__title
+    &__title {
+        color: $black;
+        font-family: $Mont;
+        font-weight: 700;
+        line-height: 1.44;
+        margin-bottom: 19px;
+    }
+    // .resent__list-item
+    &__list-item {
+        margin-bottom: 13px;
+    }
+}

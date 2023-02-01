@@ -1,0 +1,26 @@
+@import "../../../assets/styles/helpers/vars.scss";
+
+.gallery-img {
+    display: block;
+    width: 100%;
+    max-height: 1148px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    &:first-child{
+        grid-row: span 2;
+        grid-column: span 2;
+        @media (max-width: $mobileMiddle){
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+    }
+    &:nth-child(8){
+        grid-row: span 2;
+        grid-column: span 2;
+        @media (max-width: $mobileMiddle){
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.blog-sidebar {
+    @media (max-width: $tablet) {
+        grid-row: 2;
+    }
+    // .blog-sidebar__search
+    &__search {
+        width: 100%;
+        margin-bottom: 50px;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    // .blog-sidebar__categories
+    &__categories {
+        margin-bottom: 50px;
+    }
+    // .blog-sidebar__resent
+    &__resent {
+        margin-bottom: 50px;
+    }
+    // .blog-sidebar__tags
+    &__tags {
+        margin-bottom: 50px;
+    }
+}

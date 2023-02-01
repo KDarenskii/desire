@@ -1,0 +1,44 @@
+@import "../../assets/styles/helpers/vars.scss";
+
+.section-header {
+    &--center {
+        text-align: center;
+    }
+    // .section-header__title
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: $Mont;
+        color: $black;
+        line-height: 1.42;
+        position: relative;
+        @media (max-width: $mobileMiddle) {
+            font-size: 30px;
+        }
+        &--underline {
+            &::after{
+                content: '';
+                display: block;
+                width: 185px;
+                height: 1px;
+                background: #979797;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        &--center{
+            &::after{
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    // .section-header__subtitle
+    &__subtitle {
+        color: $grey;
+        @media (max-width: $mobileMiddle) {
+            font-size: 14px;
+        }
+    }
+}
