@@ -28,7 +28,13 @@ const Intro: React.FC = () => {
                 fadeEffect={{ crossFade: true }}
             >
                 <SwiperSlide className="intro__slide">
-                    <img className="intro__slide-img" src="img/intro/intro-photo.png" alt="Photo" height={815} width={703} />
+                    <img
+                        className="intro__slide-img"
+                        src="/desire/img/intro/intro-photo.png"
+                        alt="Photo"
+                        height={815}
+                        width={703}
+                    />
                     <SectionHeader
                         title="Furniture collection"
                         subtitle="Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint"
@@ -39,7 +45,13 @@ const Intro: React.FC = () => {
                     />
                 </SwiperSlide>
                 <SwiperSlide className="intro__slide">
-                    <img className="intro__slide-img" src="img/intro/intro-photo.png" alt="Photo" />
+                    <img
+                        className="intro__slide-img"
+                        src="/desire/img/intro/intro-photo.png"
+                        alt="Photo"
+                        height={815}
+                        width={703}
+                    />
                     <SectionHeader
                         title="Beautiful decor"
                         subtitle="Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint"
@@ -50,7 +62,13 @@ const Intro: React.FC = () => {
                     />
                 </SwiperSlide>
                 <SwiperSlide className="intro__slide">
-                    <img className="intro__slide-img" src="img/intro/intro-photo.png" alt="Photo" />
+                    <img
+                        className="intro__slide-img"
+                        src="/desire/img/intro/intro-photo.png"
+                        alt="Photo"
+                        height={815}
+                        width={703}
+                    />
                     <SectionHeader
                         title="Modern design"
                         subtitle="Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint"

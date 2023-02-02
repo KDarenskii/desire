@@ -2,9 +2,9 @@ import React from "react";
 
 export const useSidebar = () => {
     const [isActive, setIsActive] = React.useState(false);
-    const toggle = () => {
+    const setIsSidebarActive = (status: boolean) => {
         document.body.classList.toggle('lock');
-        setIsActive(prev => !prev);
+        setIsActive(status);
     }
-    return { isActive, toggle, setIsActive };
+    return { isSidebarActive: isActive, setIsSidebarActive };
 }

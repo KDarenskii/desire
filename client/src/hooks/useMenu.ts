@@ -4,9 +4,7 @@ export const useMenu = () => {
     
     const [isActive, setIsActive] = React.useState(false);
 
-    const toggle = () => {
-        document.body.classList.toggle('lock');
-        setIsActive(prev => !prev);
-    }
-    return { isActive, toggle, setIsActive };
+    const toggle = () => setIsActive(prev => !prev);
+
+    return { isMenuActive: isActive, toggleMenu: toggle, setIsMenuActive: setIsActive };
 };

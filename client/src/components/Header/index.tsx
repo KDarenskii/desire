@@ -7,32 +7,34 @@ import SidebarButton from "../Sidebar/SidebarButton";
 import Menu from "./Menu";
 import logoSrc from "../../assets/img/icons/logo.png";
 import MenuButton from "./Menu/MenuButton";
-
-import "./styles.scss";
 import { useMenu } from "../../hooks/useMenu";
 import { useSidebar } from "../../hooks/useSidebar";
 
+import "./styles.scss";
+
 const Header: React.FC = () => {
 
-    const { isActive: isMenuActive, toggle: toggleMenu } = useMenu();
-    const { isActive: isSidebarActive, setIsActive: setIsSidebarActive } = useSidebar();
+    const { isMenuActive, toggleMenu, setIsMenuActive } = useMenu();
+    const { isSidebarActive, setIsSidebarActive } = useSidebar();
 
     return (
         <header className="header">
             <Container>
                 <div className="header__wrapper">
-                    <MenuButton toggle={toggleMenu} />
+                    <MenuButton isActive={isMenuActive} toggle={toggleMenu} />
                     <Menu
+                        toggle={toggleMenu}
                         isActive={isMenuActive}
                         links={[
                             { text: "About", to: ABOUT_ROUTE },
                             { text: "Gallery", to: GALLERY_ROUTE },
                         ]}
                     />
-                    <Link className="header__logo" to={HOME_ROUTE}>
+                    <Link className="header__logo" to={HOME_ROUTE} onClick={() => setIsMenuActive(false)}>
                         <img className="header__logo" src={logoSrc} alt="logo" />
                     </Link>
                     <Menu
+                        toggle={toggleMenu}
                         isActive={isMenuActive}
                         type={"radius"}
                         links={[
@@ -41,7 +43,7 @@ const Header: React.FC = () => {
                         ]}
                     />
                     <Sidebar setIsActive={setIsSidebarActive} isActive={isSidebarActive} />
-                    <SidebarButton setIsActive={setIsSidebarActive} type={'open'}  />
+                    <SidebarButton setIsActive={setIsSidebarActive} type={"open"} />
                 </div>
             </Container>
         </header>

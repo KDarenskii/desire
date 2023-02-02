@@ -20,14 +20,14 @@ const Ideas: React.FC = () => {
                         category="Inrerior"
                         author="Ann Summers"
                         date="March 12, 2020"
-                        src="img/ideas/1.jpg"
+                        src="/desire/img/ideas/1.jpg"
                     />
                     <Post
                         title="Red selfies edison bulb four dollar toast humblebrag"
                         category="Dining room interior"
                         author="Finnagan Morningstar"
                         date="September 28,2020"
-                        src="img/ideas/2.jpg"
+                        src="/desire/img/ideas/2.jpg"
                     />
                 </div>
             </Container>

@@ -1,5 +1,5 @@
-export const HOME_ROUTE = '/';
-export const ABOUT_ROUTE = '/about';
-export const BLOG_ROUTE = '/blog';
-export const GALLERY_ROUTE = '/gallery';
-export const CONTACT_ROUTE = '/contact';
+export const HOME_ROUTE = '/desire';
+export const ABOUT_ROUTE = '/desire/about';
+export const BLOG_ROUTE = '/desire/blog';
+export const GALLERY_ROUTE = '/desire/gallery';
+export const CONTACT_ROUTE = '/desire/contact';

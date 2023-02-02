@@ -11,7 +11,7 @@ body{
     font-weight: 400;
     color: $grey;
     line-height: 1.69;
-    &--lock{
+    &.lock{
         overflow: hidden;
     }
 }

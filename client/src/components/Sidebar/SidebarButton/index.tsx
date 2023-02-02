@@ -6,7 +6,7 @@ import "./styles.scss";
 
 type SidebarButtonProps = {
     type: 'open' | 'close';
-    setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+    setIsActive: (status: boolean) => void;
 }
 
 const SidebarButton: React.FC<SidebarButtonProps> = ({ type, setIsActive }) => {

@@ -16,35 +16,35 @@ const Collection: React.FC<CollectionProps> = ({ className, wrapperClassName }) 
                 <CollectionItem
                     title="Truffaut literally trust"
                     subtitle="Living room furntiture | Chair"
-                    src="img/collection/1.jpg"
+                    src="/desire/img/collection/1.jpg"
                     height={350}
                     width={350}
                 />
                 <CollectionItem
                     title="Truffaut literally trust"
                     subtitle="Living room furntiture | Chair"
-                    src="img/collection/2.jpg"
+                    src="/desire/img/collection/2.jpg"
                     height={350}
                     width={350}
                 />
                 <CollectionItem
                     title="Truffaut literally trust"
                     subtitle="Living room furntiture | Chair"
-                    src="img/collection/3.jpg"
+                    src="/desire/img/collection/3.jpg"
                     height={350}
                     width={350}
                 />
                 <CollectionItem
                     title="Truffaut literally trust"
                     subtitle="Living room furntiture | Chair"
-                    src="img/collection/4.jpg"
+                    src="/desire/img/collection/4.jpg"
                     height={350}
                     width={350}
                 />
                 <CollectionItem
                     title="Truffaut literally trust"
                     subtitle="Living room furntiture | Chair"
-                    src="img/collection/5.jpg"
+                    src="/desire/img/collection/5.jpg"
                     height={350}
                     width={350}
                 />

@@ -7,7 +7,7 @@ import SidebarButton from "./SidebarButton";
 
 type SidebarProps = {
     isActive: boolean;
-    setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+    setIsActive: (status: boolean) => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isActive, setIsActive }) => {
@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isActive, setIsActive }) => {
                     +1 art party microdosing, put a bird on it brooklyn
                 </p>
             </header>
-            <img className="sidebar__photo" src="img/sidebar-photo.jpg" alt="Photo" />
+            <img className="sidebar__photo" src="/desire/img/sidebar-photo.jpg" alt="Photo" />
         </aside>
     );
 };

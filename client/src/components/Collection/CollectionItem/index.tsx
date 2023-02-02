@@ -1,9 +1,9 @@
 import React from "react";
 import SectionHeader from "../../SectionHeader";
 import cn from "classnames";
+import ImageWithLoader from "../../ImageWithLoader";
 
 import "./styles.scss";
-import ImageWithLoader from "../../ImageWithLoader";
 
 type CollectionItemProps = {
     src: string;

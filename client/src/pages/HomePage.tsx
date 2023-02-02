@@ -15,11 +15,11 @@ const HomePage: React.FC = () => {
             <CallToAction />
             <Process />
             <Gallery>
-                <GalleryImg src="img/gallery/1.jpg" height={1148} />
-                <GalleryImg src="img/gallery/2.jpg" height={567} />
-                <GalleryImg src="img/gallery/3.jpg" height={567} />
-                <GalleryImg src="img/gallery/4.jpg" height={567} />
-                <GalleryImg src="img/gallery/5.jpg" height={567} />
+                <GalleryImg src="/desire/img/gallery/1.jpg" height={1148} />
+                <GalleryImg src="/desire/img/gallery/2.jpg" height={567} />
+                <GalleryImg src="/desire/img/gallery/3.jpg" height={567} />
+                <GalleryImg src="/desire/img/gallery/4.jpg" height={567} />
+                <GalleryImg src="/desire/img/gallery/5.jpg" height={567} />
             </Gallery>
             <Ideas />
         </>
